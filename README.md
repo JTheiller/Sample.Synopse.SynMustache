@@ -1,4 +1,6 @@
-# Sample.Synopse.SynMustache (Delphi7)
+# Sample.Synopse.SynMustache
+
+IDE: (Delphi7)
 
 boss init
 
