@@ -16,16 +16,16 @@ object Form1: TForm1
   TextHeight = 13
   object Panel3: TPanel
     Left = 200
-    Top = 49
+    Top = 73
     Width = 300
-    Height = 400
+    Height = 376
     Align = alLeft
     TabOrder = 2
     object Memo1: TMemo
       Left = 1
       Top = 1
       Width = 298
-      Height = 398
+      Height = 374
       Align = alClient
       Lines.Strings = (
         'Hello {{name}}'
@@ -39,16 +39,16 @@ object Form1: TForm1
   end
   object Panel4: TPanel
     Left = 500
-    Top = 49
+    Top = 73
     Width = 292
-    Height = 400
+    Height = 376
     Align = alClient
     TabOrder = 3
     object Memo2: TMemo
       Left = 1
       Top = 1
       Width = 290
-      Height = 398
+      Height = 374
       Align = alClient
       ReadOnly = True
       ScrollBars = ssVertical
@@ -57,9 +57,9 @@ object Form1: TForm1
   end
   object Panel2: TPanel
     Left = 0
-    Top = 49
+    Top = 73
     Width = 200
-    Height = 400
+    Height = 376
     Align = alLeft
     TabOrder = 1
     object Label1: TLabel
@@ -115,12 +115,12 @@ object Form1: TForm1
     Left = 0
     Top = 0
     Width = 792
-    Height = 49
+    Height = 73
     Align = alTop
     TabOrder = 0
     object Label4: TLabel
       Left = 1
-      Top = 1
+      Top = 28
       Width = 790
       Height = 27
       Align = alTop
@@ -135,7 +135,7 @@ object Form1: TForm1
     end
     object Label5: TLabel
       Left = 1
-      Top = 28
+      Top = 55
       Width = 790
       Height = 13
       Align = alTop
@@ -144,6 +144,21 @@ object Form1: TForm1
         '[Delphi] [FPC] Delphi implementation of the Mustache template la' +
         'nguage, supporting Delphi 6 up to Delphi 10 Seattle (and FPC/Laz' +
         'arus compilation).'
+    end
+    object Label6: TLabel
+      Left = 1
+      Top = 1
+      Width = 790
+      Height = 27
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'GitHub - JTheiller - Sample.Synopse.SynMustache'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -19
+      Font.Name = 'Arial Black'
+      Font.Style = [fsBold]
+      ParentFont = False
     end
   end
 end

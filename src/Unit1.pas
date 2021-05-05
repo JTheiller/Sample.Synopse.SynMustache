@@ -22,6 +22,7 @@ type
     Label5: TLabel;
     edtOther: TEdit;
     Label3: TLabel;
+    Label6: TLabel;
     procedure FormShow(Sender: TObject);
     procedure edtNameChange(Sender: TObject);
     procedure edtValueChange(Sender: TObject);
@@ -45,12 +46,15 @@ uses
 {$R *.dfm}
 
 function TForm1.TemplateToText(Value: String): String;
-var
-  A: TSynMustache;
 begin
-  Result := '';
-  A := TSynMustache.Parse(Trim(Value));
-  Result := A.RenderJSON('{name:?,value:?,other:?}',[],[edtName.Text,edtValue.Text,edtOther.Text]);
+  Result := TSynMustache
+              .Parse(Trim(Value))
+              .RenderJSON('{name:?,value:?,other:?}',[],
+                          [edtName.Text,
+                           edtValue.Text,
+                           edtOther.Text
+                          ]
+                         );
 end;
 
 procedure TForm1.DoChange;
